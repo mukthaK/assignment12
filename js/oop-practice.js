@@ -76,15 +76,20 @@ let Dog = class {
 
 // STEP 8: Now, convert all of your properties to private properties. Then, create a private method called checkType(). In this method you will check to see what the type is. If it’s dog, return dog, otherwise, return cat. Then, create a privileged method called speak that returns the value of the checkType() method. The console window should now display “The <animal type> has made a noise!”
 // class Animal {
+//     #type;
+//     #breed;
+//     #color;
+//     #height;
+//     #length;
 //     constructor(type, breed, color, height, length){
-//         this._type = type;
-//         this._breed = breed;
-//         this._color = color;
-//         this._height = height;
-//         this._length = length;
+//         this.#type = type;
+//         this.#breed = breed;
+//         this.#color = color;
+//         this.#height = height;
+//         this.#length = length;
 //     }  
-//     _checkType = function() {
-//         switch(this._type) {
+//     #checkType() {
+//         switch(this.#type) {
 //             case 'dog': 
 //                 return `dog`;
 //                 break;
@@ -94,8 +99,8 @@ let Dog = class {
 //         } 
 //     }
 
-//     speak = function(){
-//         console.log(`The ${this._checkType()} has made a noise!`);
+//     speak(){
+//         console.log(`The ${this.#checkType()} has made a noise!`);
 //     }
 // }
 // const ani1 = new Animal('cat', 'Bengal', 'Snow Mink', '13inches', '7inches');
